@@ -1,16 +1,39 @@
-# qr_code_scanner
+# ScanToPayUsingQRCode
 
-A new Flutter project.
+A Flutter QR code-based payment application for point-of-sale transactions.
+
+## Features
+
+- 📦 **Inventory Management**: Browse and select products from a beautiful grid interface
+- 🛒 **Smart Cart**: Add/remove items with real-time price calculation including tax
+- 📱 **QR Generation**: Generate compact QR codes containing invoice data
+- 📷 **QR Scanning**: Scan QR codes from phone displays using camera
+- 💳 **Payment Verification**: View detailed invoice breakdown before payment
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK 3.10.7 or higher
+- Dart SDK
+- Android Studio / VS Code
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
+
+## How It Works
+
+1. **Merchant**: Select products → Generate QR code
+2. **Customer**: Scan QR code → Verify invoice → Pay
+
+## Tech Stack
+
+- **Framework**: Flutter
+- **State Management**: GetX
+- **QR Processing**: zxing2
+- **Camera**: camera package
+- **Image Processing**: image package
